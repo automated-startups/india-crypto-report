@@ -1,0 +1,337 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50; /* Darker heading color */
+}
+
+/* Header Styles */
+.site-header, nav /* Apply to nav tag used in my HTML */ {
+    background-color: #2c3e50; /* Dark header background */
+    color: #ffffff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container, .nav-container /* Apply to nav-container used in my HTML */ {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main-navigation ul, nav ul /* Apply to nav ul used in my HTML */ {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-navigation li, nav li /* Apply to nav li used in my HTML */ {
+    margin-left: 20px;
+}
+
+.main-navigation a, nav a /* Apply to nav a used in my HTML */ {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.main-navigation a:hover, nav a:hover /* Apply to nav a used in my HTML */ {
+    color: #1abc9c; /* Highlight color on hover */
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero, .hero-section /* Apply to hero-section used in my HTML */ {
+    background: linear-gradient(to right, #16a085, #27ae60); /* Teal/Green gradient */
+    color: #ffffff;
+    text-align: center; /* Changed back to center */
+    padding: 60px 20px;
+}
+
+.hero .hero-content /* Target inner div */ {
+    max-width: 1100px; /* Match container width */
+    margin: 0 auto; /* Center content */
+}
+
+.hero h1, .hero-section h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.hero p, .hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button, .hero-button /* Apply to hero-button used in my HTML */ {
+    background-color: #e67e22; /* Orange button */
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensure it behaves like a button */
+    text-decoration: none; /* Remove underline */
+}
+
+.cta-button:hover, .hero-button:hover {
+    background-color: #d35400; /* Darker orange on hover */
+    text-decoration: none;
+}
+
+/* Author Section Styles */
+.author-section, .author-block /* Apply to author-block used in my HTML */ {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px; /* Added margin */
+}
+
+.author-section h2, .author-block h2 {
+    /* text-align: center; <-- REMOVED, default left */
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.author-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.author-photo {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.author-bio h3, .author-text h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.author-bio h4, .author-text h4 {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.author-bio ul, .author-text ul {
+    padding-left: 20px;
+}
+
+/* Report Content Styles */
+.report-content, main /* Apply to main tag used in my HTML */ {
+    padding: 0; /* Remove padding, handled by main-container */
+}
+
+main section[id] {
+    padding-top: 70px; /* Adjust based on nav height */
+    margin-top: -70px;
+}
+
+.report-content h1, main h1,
+.report-content h2, main h2,
+.report-content h3, main h3,
+.report-content h4, main h4,
+.report-content h5, main h5,
+.report-content h6, main h6 {
+    color: #16a085; /* Match hero gradient color */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.report-content h1, main h1 {
+    font-size: 2.2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.report-content h2, main h2 {
+    font-size: 1.8em;
+}
+
+.report-content h3, main h3 {
+    font-size: 1.4em;
+}
+
+.report-content p, main p {
+    margin-bottom: 1em;
+}
+
+.report-content ul, main ul,
+.report-content ol, main ol {
+    margin-bottom: 1em;
+    padding-left: 40px;
+}
+
+.report-content li, main li {
+    margin-bottom: 0.5em;
+}
+
+.report-content table, main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+.report-content th, main th,
+.report-content td, main td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+.report-content th, main th {
+    background-color: #f2f2f2;
+}
+
+.report-content code, main code {
+    background-color: #e9ecef;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.report-content pre code, main pre code {
+    display: block;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.report-content i, main i {
+    color: #6c757d;
+    font-size: 0.9em;
+    display: block; /* Put sources on new lines */
+    margin-top: 0.5em;
+}
+
+/* Footer Styles */
+.site-footer /* Apply to footer tag used in my HTML */ {
+    background-color: #2c3e50; /* Dark footer background */
+    color: #bdc3c7; /* Lighter text color for footer */
+    padding: 30px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container p {
+    margin-bottom: 10px;
+}
+
+.contact-links a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #34495e; /* Slightly lighter background for links */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Ensure no underline */
+}
+
+.contact-links a:hover {
+    background-color: #1abc9c; /* Highlight color on hover */
+    text-decoration: none;
+}
+
+/* Add specific styles for whatsapp/linkedin buttons if needed */
+.contact-button.whatsapp {
+    background-color: #25D366 !important; /* Use important if needed to override */
+}
+.contact-button.whatsapp:hover {
+    background-color: #128C7E !important;
+}
+.contact-button.linkedin {
+    background-color: #0A66C2 !important;
+}
+.contact-button.linkedin:hover {
+    background-color: #004182 !important;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container, .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-navigation, nav ul {
+        margin-top: 10px;
+        width: 100%; /* Ensure nav takes full width */
+    }
+    .main-navigation ul, nav ul {
+        flex-direction: column;
+    }
+    .main-navigation li, nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .hero h1, .hero-section h1 {
+        font-size: 2em;
+    }
+    .hero p, .hero-section p {
+        font-size: 1em;
+    }
+    .author-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .author-photo {
+        margin-bottom: 20px;
+    }
+    .author-bio, .author-text {
+        text-align: left; /* Keep bio text left-aligned */
+    }
+}
+
+/* Add smooth scrolling */
+html { scroll-behavior: smooth; }
+
